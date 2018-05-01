@@ -1,4 +1,4 @@
-# SotA-Composer
+# Maestro of the Avatar
 Maestro and ABC Player port for Shroud of the Avatar: Forsaken Virtues
 
 ==WIP==
