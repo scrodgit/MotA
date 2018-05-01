@@ -50,6 +50,7 @@ public class PartAutoNumberer
 			init(prefs, LotroInstrument.LONELY_MOUNTAIN_FIDDLE, LotroInstrument.BASIC_FIDDLE);
 			init(prefs, LotroInstrument.SPRIGHTLY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
 			init(prefs, LotroInstrument.TRAVELLERS_TRUSTY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			init(prefs, LotroInstrument.PIANO, 10 * x10);
 
 			assert (firstNumber.size() == LotroInstrument.values().length);
 		}

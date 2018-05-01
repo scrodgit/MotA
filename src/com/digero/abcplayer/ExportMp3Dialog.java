@@ -34,6 +34,11 @@ import com.digero.common.util.Util;
 
 public class ExportMp3Dialog extends JDialog implements TableLayoutConstants
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2637356914328039418L;
+
 	private static final int TEXT_FIELD_COLS = 28;
 
 	private enum Quality

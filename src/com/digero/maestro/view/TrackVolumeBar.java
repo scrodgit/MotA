@@ -25,6 +25,10 @@ import com.digero.common.util.Util;
 
 public class TrackVolumeBar extends JPanel implements IDiscardable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5087232224317389252L;
 	private static final int PTR_WIDTH = 6;
 	private static final int PTR_HEIGHT = 16;
 	private static final int BAR_HEIGHT = 10;

@@ -189,7 +189,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 
 		ToolTipManager.sharedInstance().setDismissDelay(8000);
 
-		String welcomeMessage = formatInfoMessage("Hello Maestro", "Drag and drop a MIDI or ABC file to open it.\n"
+		String welcomeMessage = formatInfoMessage("Maestro of the Avatar", "Drag and drop a MIDI or ABC file to open it.\n"
 				+ "Or use File > Open.");
 
 		partAutoNumberer = new PartAutoNumberer(prefs.node("partAutoNumberer"));
@@ -223,7 +223,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 
 			if (LotroSequencerWrapper.getLoadLotroSynthError() != null)
 			{
-				welcomeMessage = formatErrorMessage("Could not load LOTRO instrument sounds",
+				welcomeMessage = formatErrorMessage("Could not load instrument sounds",
 						"ABC Preview will use standard MIDI instruments instead\n"
 								+ "(drums do not sound good in this mode).\n\n" + "Error details:\n"
 								+ LotroSequencerWrapper.getLoadLotroSynthError());

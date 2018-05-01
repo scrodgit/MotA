@@ -16,6 +16,10 @@ import com.digero.common.midi.VolumeTransceiver;
 
 public class NativeVolumeBar extends JPanel
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5024732033013351530L;
 	private static final int PTR_WIDTH = 12;
 	private static final int PTR_HEIGHT = 12;
 	private static final int BAR_HEIGHT = 6;

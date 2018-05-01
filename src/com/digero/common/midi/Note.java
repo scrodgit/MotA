@@ -43,7 +43,7 @@ public enum Note
 	public static final Note MIN = CX;
 	public static final Note MAX = B9;
 	public static final Note MIN_PLAYABLE = C2;
-	public static final Note MAX_PLAYABLE = C5;
+	public static final Note MAX_PLAYABLE = B8;
 
 	/** The MIDI ID for this note. */
 	public final int id;
@@ -186,19 +186,19 @@ public enum Note
 				naturalId = id;
 			}
 
-			if (octave <= 3)
+			if (octave <= 5)
 				abc.append(Character.toUpperCase(s.charAt(0)));
 			else
 				abc.append(Character.toLowerCase(s.charAt(0)));
 
-			// Add commas for octaves below 3
-			for (int c = octave; c < 3; c++)
+			// Add commas for octaves below 5
+			for (int c = octave; c < 5; c++)
 				abc.append(',');
-
-			// Add apostrophes for octaves above 4
-			for (int c = octave; c > 4; c--)
+			    
+			// Add apostrophes for octaves above 6
+			for (int c = octave; c > 6; c--)
 				abc.append('\'');
-
+				
 			this.abc = abc.toString();
 		}
 	}

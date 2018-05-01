@@ -12,6 +12,10 @@ import javax.swing.JLabel;
 
 public class LinkButton extends JLabel
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4260897550340025805L;
 	private List<ActionListener> listeners = null;
 
 	public LinkButton()

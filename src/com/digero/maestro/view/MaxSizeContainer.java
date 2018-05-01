@@ -12,6 +12,11 @@ import javax.swing.JPanel;
  */
 public class MaxSizeContainer extends JPanel
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5917293358376690232L;
+
 	public MaxSizeContainer(Component element, int maxWidth)
 	{
 		this(element, new Dimension(maxWidth, Integer.MAX_VALUE));

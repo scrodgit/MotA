@@ -2,6 +2,11 @@ package com.digero.maestro.abc;
 
 public class AbcConversionException extends Exception
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4768041429271226726L;
+
 	public AbcConversionException()
 	{
 		super();

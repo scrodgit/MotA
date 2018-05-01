@@ -39,6 +39,10 @@ import com.digero.common.util.Listener;
 
 public class TrackListPanel extends JPanel implements Listener<SequencerEvent>, TableLayoutConstants
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 575087076684985495L;
 	public static final int TRACKLIST_ROWHEIGHT = 18;
 	private static final Object TRACK_INDEX_KEY = new Object();
 

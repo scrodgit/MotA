@@ -95,6 +95,10 @@ import com.digero.common.view.TempoBar;
 
 public class AbcPlayer extends JFrame implements TableLayoutConstants, IMidiConstants, TrackListPanelCallback
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7966166757789789316L;
 	private static final ExtensionFileFilter ABC_FILE_FILTER = new ExtensionFileFilter("ABC Files", "abc", "txt");
 	public static final String APP_NAME = "ABC Player";
 	private static final String APP_NAME_LONG = APP_NAME + " for The Lord of the Rings Online";
@@ -1425,6 +1429,11 @@ public class AbcPlayer extends JFrame implements TableLayoutConstants, IMidiCons
 
 	private class WaitDialog extends JDialog
 	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 8777515967187666468L;
+
 		public WaitDialog(JFrame owner, File saveFile)
 		{
 			super(owner, APP_NAME, false);

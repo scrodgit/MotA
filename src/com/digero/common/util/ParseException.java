@@ -2,6 +2,11 @@ package com.digero.common.util;
 
 public class ParseException extends Exception
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8396440402193485678L;
+
 	public ParseException(String message, String fileName, int line, int column)
 	{
 		super(formatMessage(message, fileName, line, column));

@@ -68,6 +68,11 @@ import com.digero.common.view.ColorTable;
 
 public class HighlightAbcNotesFrame extends JFrame
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8719052314159394401L;
+
 	private SequencerWrapper sequencer;
 
 	private NavigableSet<AbcRegion> regions = new TreeSet<AbcRegion>();
@@ -225,6 +230,10 @@ public class HighlightAbcNotesFrame extends JFrame
 
 	private static class TextAreaContainer extends JPanel implements Scrollable
 	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1476906248210048136L;
 		private JTextArea textArea;
 		private JTextArea gutter;
 

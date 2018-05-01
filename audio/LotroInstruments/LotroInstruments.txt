@@ -774,186 +774,6 @@
         FineTune=0
         Type=1
 
-    SampleName=drums_43
-        SampleRate=44100
-        Key=43
-        FineTune=0
-        Type=1
-
-    SampleName=drums_44
-        SampleRate=44100
-        Key=44
-        FineTune=0
-        Type=1
-
-    SampleName=drums_45
-        SampleRate=44100
-        Key=45
-        FineTune=0
-        Type=1
-
-    SampleName=drums_46
-        SampleRate=44100
-        Key=46
-        FineTune=0
-        Type=1
-
-    SampleName=drums_47
-        SampleRate=44100
-        Key=47
-        FineTune=0
-        Type=1
-
-    SampleName=drums_48
-        SampleRate=44100
-        Key=48
-        FineTune=0
-        Type=1
-
-    SampleName=drums_49
-        SampleRate=44100
-        Key=49
-        FineTune=0
-        Type=1
-
-    SampleName=drums_50
-        SampleRate=44100
-        Key=50
-        FineTune=0
-        Type=1
-
-    SampleName=drums_51
-        SampleRate=44100
-        Key=51
-        FineTune=0
-        Type=1
-
-    SampleName=drums_52
-        SampleRate=44100
-        Key=52
-        FineTune=0
-        Type=1
-
-    SampleName=drums_53
-        SampleRate=44100
-        Key=53
-        FineTune=0
-        Type=1
-
-    SampleName=drums_54
-        SampleRate=44100
-        Key=54
-        FineTune=0
-        Type=1
-
-    SampleName=drums_55
-        SampleRate=44100
-        Key=55
-        FineTune=0
-        Type=1
-
-    SampleName=drums_56
-        SampleRate=44100
-        Key=56
-        FineTune=0
-        Type=1
-
-    SampleName=drums_57
-        SampleRate=44100
-        Key=57
-        FineTune=0
-        Type=1
-
-    SampleName=drums_58
-        SampleRate=44100
-        Key=58
-        FineTune=0
-        Type=1
-
-    SampleName=drums_59
-        SampleRate=44100
-        Key=59
-        FineTune=0
-        Type=1
-
-    SampleName=drums_60
-        SampleRate=44100
-        Key=60
-        FineTune=0
-        Type=1
-
-    SampleName=drums_61
-        SampleRate=44100
-        Key=61
-        FineTune=0
-        Type=1
-
-    SampleName=drums_62
-        SampleRate=44100
-        Key=62
-        FineTune=0
-        Type=1
-
-    SampleName=drums_63
-        SampleRate=44100
-        Key=63
-        FineTune=0
-        Type=1
-
-    SampleName=drums_64
-        SampleRate=44100
-        Key=64
-        FineTune=0
-        Type=1
-
-    SampleName=drums_65
-        SampleRate=44100
-        Key=65
-        FineTune=0
-        Type=1
-
-    SampleName=drums_66
-        SampleRate=44100
-        Key=66
-        FineTune=0
-        Type=1
-
-    SampleName=drums_67
-        SampleRate=44100
-        Key=67
-        FineTune=0
-        Type=1
-
-    SampleName=drums_68
-        SampleRate=44100
-        Key=68
-        FineTune=0
-        Type=1
-
-    SampleName=drums_69
-        SampleRate=44100
-        Key=69
-        FineTune=0
-        Type=1
-
-    SampleName=drums_70
-        SampleRate=44100
-        Key=70
-        FineTune=0
-        Type=1
-
-    SampleName=drums_71
-        SampleRate=44100
-        Key=71
-        FineTune=0
-        Type=1
-
-    SampleName=drums_72
-        SampleRate=44100
-        Key=72
-        FineTune=0
-        Type=1
-
     SampleName=flute_36
         SampleRate=44100
         Key=36
@@ -1859,6 +1679,510 @@
         Key=71
         FineTune=0
         Type=1
+
+    SampleName=piano_36
+        SampleRate=44100
+        Key=36
+        FineTune=0
+        Type=1
+
+    SampleName=piano_37
+        SampleRate=44100
+        Key=37
+        FineTune=0
+        Type=1
+
+    SampleName=piano_38
+        SampleRate=44100
+        Key=38
+        FineTune=0
+        Type=1
+
+    SampleName=piano_39
+        SampleRate=44100
+        Key=39
+        FineTune=0
+        Type=1
+
+    SampleName=piano_40
+        SampleRate=44100
+        Key=40
+        FineTune=0
+        Type=1
+
+    SampleName=piano_41
+        SampleRate=44100
+        Key=41
+        FineTune=0
+        Type=1
+
+    SampleName=piano_42
+        SampleRate=44100
+        Key=42
+        FineTune=0
+        Type=1
+
+    SampleName=piano_43
+        SampleRate=44100
+        Key=43
+        FineTune=0
+        Type=1
+
+    SampleName=piano_44
+        SampleRate=44100
+        Key=44
+        FineTune=0
+        Type=1
+
+    SampleName=piano_45
+        SampleRate=44100
+        Key=45
+        FineTune=0
+        Type=1
+
+    SampleName=piano_46
+        SampleRate=44100
+        Key=46
+        FineTune=0
+        Type=1
+
+    SampleName=piano_47
+        SampleRate=44100
+        Key=47
+        FineTune=0
+        Type=1
+
+    SampleName=piano_48
+        SampleRate=44100
+        Key=48
+        FineTune=0
+        Type=1
+
+    SampleName=piano_49
+        SampleRate=44100
+        Key=49
+        FineTune=0
+        Type=1
+
+    SampleName=piano_50
+        SampleRate=44100
+        Key=50
+        FineTune=0
+        Type=1
+
+    SampleName=piano_51
+        SampleRate=44100
+        Key=51
+        FineTune=0
+        Type=1
+
+    SampleName=piano_52
+        SampleRate=44100
+        Key=52
+        FineTune=0
+        Type=1
+
+    SampleName=piano_53
+        SampleRate=44100
+        Key=53
+        FineTune=0
+        Type=1
+
+    SampleName=piano_54
+        SampleRate=44100
+        Key=54
+        FineTune=0
+        Type=1
+
+    SampleName=piano_55
+        SampleRate=44100
+        Key=55
+        FineTune=0
+        Type=1
+
+    SampleName=piano_56
+        SampleRate=44100
+        Key=56
+        FineTune=0
+        Type=1
+
+    SampleName=piano_57
+        SampleRate=44100
+        Key=57
+        FineTune=0
+        Type=1
+
+    SampleName=piano_58
+        SampleRate=44100
+        Key=58
+        FineTune=0
+        Type=1
+
+    SampleName=piano_59
+        SampleRate=44100
+        Key=59
+        FineTune=0
+        Type=1
+
+    SampleName=piano_60
+        SampleRate=44100
+        Key=60
+        FineTune=0
+        Type=1
+
+    SampleName=piano_61
+        SampleRate=44100
+        Key=61
+        FineTune=0
+        Type=1
+
+    SampleName=piano_62
+        SampleRate=44100
+        Key=62
+        FineTune=0
+        Type=1
+
+    SampleName=piano_63
+        SampleRate=44100
+        Key=63
+        FineTune=0
+        Type=1
+
+    SampleName=piano_64
+        SampleRate=44100
+        Key=64
+        FineTune=0
+        Type=1
+
+    SampleName=piano_65
+        SampleRate=44100
+        Key=65
+        FineTune=0
+        Type=1
+
+    SampleName=piano_66
+        SampleRate=44100
+        Key=66
+        FineTune=0
+        Type=1
+
+    SampleName=piano_67
+        SampleRate=44100
+        Key=67
+        FineTune=0
+        Type=1
+
+    SampleName=piano_68
+        SampleRate=44100
+        Key=68
+        FineTune=0
+        Type=1
+
+    SampleName=piano_69
+        SampleRate=44100
+        Key=69
+        FineTune=0
+        Type=1
+
+    SampleName=piano_70
+        SampleRate=44100
+        Key=70
+        FineTune=0
+        Type=1
+
+    SampleName=piano_71
+        SampleRate=44100
+        Key=71
+        FineTune=0
+        Type=1
+
+    SampleName=piano_72
+        SampleRate=44100
+        Key=72
+        FineTune=0
+        Type=1  
+
+    SampleName=piano_73
+        SampleRate=44100
+        Key=73
+        FineTune=0
+        Type=1
+
+    SampleName=piano_74
+        SampleRate=44100
+        Key=74
+        FineTune=0
+        Type=1
+
+    SampleName=piano_75
+        SampleRate=44100
+        Key=75
+        FineTune=0
+        Type=1
+
+    SampleName=piano_76
+        SampleRate=44100
+        Key=76
+        FineTune=0
+        Type=1
+
+    SampleName=piano_77
+        SampleRate=44100
+        Key=77
+        FineTune=0
+        Type=1
+
+    SampleName=piano_78
+        SampleRate=44100
+        Key=78
+        FineTune=0
+        Type=1
+
+    SampleName=piano_79
+        SampleRate=44100
+        Key=79
+        FineTune=0
+        Type=1
+
+    SampleName=piano_80
+        SampleRate=44100
+        Key=80
+        FineTune=0
+        Type=1
+
+    SampleName=piano_81
+        SampleRate=44100
+        Key=81
+        FineTune=0
+        Type=1
+
+    SampleName=piano_82
+        SampleRate=44100
+        Key=82
+        FineTune=0
+        Type=1
+
+    SampleName=piano_83
+        SampleRate=44100
+        Key=83
+        FineTune=0
+        Type=1
+
+    SampleName=piano_84
+        SampleRate=44100
+        Key=84
+        FineTune=0
+        Type=1
+
+    SampleName=piano_85
+        SampleRate=44100
+        Key=85
+        FineTune=0
+        Type=1
+
+    SampleName=piano_86
+        SampleRate=44100
+        Key=86
+        FineTune=0
+        Type=1
+
+    SampleName=piano_87
+        SampleRate=44100
+        Key=87
+        FineTune=0
+        Type=1
+
+    SampleName=piano_88
+        SampleRate=44100
+        Key=88
+        FineTune=0
+        Type=1
+
+    SampleName=piano_89
+        SampleRate=44100
+        Key=89
+        FineTune=0
+        Type=1
+
+    SampleName=piano_90
+        SampleRate=44100
+        Key=90
+        FineTune=0
+        Type=1
+
+    SampleName=piano_91
+        SampleRate=44100
+        Key=91
+        FineTune=0
+        Type=1
+
+    SampleName=piano_92
+        SampleRate=44100
+        Key=92
+        FineTune=0
+        Type=1
+
+    SampleName=piano_93
+        SampleRate=44100
+        Key=93
+        FineTune=0
+        Type=1
+
+    SampleName=piano_94
+        SampleRate=44100
+        Key=94
+        FineTune=0
+        Type=1
+
+    SampleName=piano_95
+        SampleRate=44100
+        Key=95
+        FineTune=0
+        Type=1
+
+    SampleName=piano_96
+        SampleRate=44100
+        Key=96
+        FineTune=0
+        Type=1
+
+    SampleName=piano_97
+        SampleRate=44100
+        Key=97
+        FineTune=0
+        Type=1 
+
+    SampleName=piano_98
+        SampleRate=44100
+        Key=98
+        FineTune=0
+        Type=1
+
+    SampleName=piano_99
+        SampleRate=44100
+        Key=99
+        FineTune=0
+        Type=1
+
+    SampleName=piano_100
+        SampleRate=44100
+        Key=100
+        FineTune=0
+        Type=1
+
+    SampleName=piano_101
+        SampleRate=44100
+        Key=101
+        FineTune=0
+        Type=1
+
+    SampleName=piano_102
+        SampleRate=44100
+        Key=102
+        FineTune=0
+        Type=1
+
+    SampleName=piano_103
+        SampleRate=44100
+        Key=103
+        FineTune=0
+        Type=1
+
+    SampleName=piano_104
+        SampleRate=44100
+        Key=104
+        FineTune=0
+        Type=1
+
+    SampleName=piano_105
+        SampleRate=44100
+        Key=105
+        FineTune=0
+        Type=1
+
+    SampleName=piano_106
+        SampleRate=44100
+        Key=106
+        FineTune=0
+        Type=1
+
+    SampleName=piano_107
+        SampleRate=44100
+        Key=107
+        FineTune=0
+        Type=1
+
+    SampleName=piano_108
+        SampleRate=44100
+        Key=108
+        FineTune=0
+        Type=1
+
+    SampleName=piano_109
+        SampleRate=44100
+        Key=109
+        FineTune=0
+        Type=1
+
+    SampleName=piano_110
+        SampleRate=44100
+        Key=110
+        FineTune=0
+        Type=1
+
+    SampleName=piano_111
+        SampleRate=44100
+        Key=111
+        FineTune=0
+        Type=1
+
+    SampleName=piano_112
+        SampleRate=44100
+        Key=112
+        FineTune=0
+        Type=1
+
+    SampleName=piano_113
+        SampleRate=44100
+        Key=113
+        FineTune=0
+        Type=1
+
+    SampleName=piano_114
+        SampleRate=44100
+        Key=114
+        FineTune=0
+        Type=1
+
+    SampleName=piano_115
+        SampleRate=44100
+        Key=115
+        FineTune=0
+        Type=1
+
+    SampleName=piano_116
+        SampleRate=44100
+        Key=116
+        FineTune=0
+        Type=1
+
+    SampleName=piano_117
+        SampleRate=44100
+        Key=117
+        FineTune=0
+        Type=1
+
+    SampleName=piano_118
+        SampleRate=44100
+        Key=118
+        FineTune=0
+        Type=1
+
+    SampleName=piano_119
+        SampleRate=44100
+        Key=119
+        FineTune=0
+        Type=1 
 
     SampleName=pibgorn_38
         SampleRate=44100
@@ -3499,217 +3823,7 @@
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_43
-            Z_LowKey=43
-            Z_HighKey=43
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_44
-            Z_LowKey=44
-            Z_HighKey=44
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_45
-            Z_LowKey=45
-            Z_HighKey=45
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_46
-            Z_LowKey=46
-            Z_HighKey=46
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_47
-            Z_LowKey=47
-            Z_HighKey=47
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_48
-            Z_LowKey=48
-            Z_HighKey=48
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_49
-            Z_LowKey=49
-            Z_HighKey=49
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_50
-            Z_LowKey=50
-            Z_HighKey=50
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_51
-            Z_LowKey=51
-            Z_HighKey=51
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_52
-            Z_LowKey=52
-            Z_HighKey=52
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_53
-            Z_LowKey=53
-            Z_HighKey=53
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_54
-            Z_LowKey=54
-            Z_HighKey=54
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_55
-            Z_LowKey=55
-            Z_HighKey=55
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_56
-            Z_LowKey=56
-            Z_HighKey=56
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_57
-            Z_LowKey=57
-            Z_HighKey=57
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_58
-            Z_LowKey=58
-            Z_HighKey=58
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_59
-            Z_LowKey=59
-            Z_HighKey=59
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_60
-            Z_LowKey=60
-            Z_HighKey=60
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_61
-            Z_LowKey=61
-            Z_HighKey=61
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_62
-            Z_LowKey=62
-            Z_HighKey=62
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_63
-            Z_LowKey=63
-            Z_HighKey=63
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_64
-            Z_LowKey=64
-            Z_HighKey=64
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_65
-            Z_LowKey=65
-            Z_HighKey=65
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_66
-            Z_LowKey=66
-            Z_HighKey=66
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_67
-            Z_LowKey=67
-            Z_HighKey=67
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_68
-            Z_LowKey=68
-            Z_HighKey=68
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_69
-            Z_LowKey=69
-            Z_HighKey=69
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_70
-            Z_LowKey=70
-            Z_HighKey=70
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_71
-            Z_LowKey=71
-            Z_HighKey=71
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-        Sample=drums_72
-            Z_LowKey=72
-            Z_HighKey=72
-            Z_LowVelocity=0
-            Z_HighVelocity=127
-            Z_releaseVolEnv=-1200
-
-
+        
     InstrumentName=Flute
 
         Sample=flute_36
@@ -5074,6 +5188,595 @@
             Z_fineTune=65517
             Z_overridingRootKey=72
 
+    InstrumentName=Piano
+
+        Sample=piano_36
+            Z_LowKey=36
+            Z_HighKey=36
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_37
+            Z_LowKey=37
+            Z_HighKey=37
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_38
+            Z_LowKey=38
+            Z_HighKey=38
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_39
+            Z_LowKey=39
+            Z_HighKey=39
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_40
+            Z_LowKey=40
+            Z_HighKey=40
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_41
+            Z_LowKey=41
+            Z_HighKey=41
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_42
+            Z_LowKey=42
+            Z_HighKey=42
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_43
+            Z_LowKey=43
+            Z_HighKey=43
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_44
+            Z_LowKey=44
+            Z_HighKey=44
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_45
+            Z_LowKey=45
+            Z_HighKey=45
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_46
+            Z_LowKey=46
+            Z_HighKey=46
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_47
+            Z_LowKey=47
+            Z_HighKey=47
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_48
+            Z_LowKey=48
+            Z_HighKey=48
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_49
+            Z_LowKey=49
+            Z_HighKey=49
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_50
+            Z_LowKey=50
+            Z_HighKey=50
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_51
+            Z_LowKey=51
+            Z_HighKey=51
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_52
+            Z_LowKey=52
+            Z_HighKey=52
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_53
+            Z_LowKey=53
+            Z_HighKey=53
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_54
+            Z_LowKey=54
+            Z_HighKey=54
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_55
+            Z_LowKey=55
+            Z_HighKey=55
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_56
+            Z_LowKey=56
+            Z_HighKey=56
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_57
+            Z_LowKey=57
+            Z_HighKey=57
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_58
+            Z_LowKey=58
+            Z_HighKey=58
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_59
+            Z_LowKey=59
+            Z_HighKey=59
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_60
+            Z_LowKey=60
+            Z_HighKey=60
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_61
+            Z_LowKey=61
+            Z_HighKey=61
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_62
+            Z_LowKey=62
+            Z_HighKey=62
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_63
+            Z_LowKey=63
+            Z_HighKey=63
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_64
+            Z_LowKey=64
+            Z_HighKey=64
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_65
+            Z_LowKey=65
+            Z_HighKey=65
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_66
+            Z_LowKey=66
+            Z_HighKey=66
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_67
+            Z_LowKey=67
+            Z_HighKey=67
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_68
+            Z_LowKey=68
+            Z_HighKey=68
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_69
+            Z_LowKey=69
+            Z_HighKey=69
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_70
+            Z_LowKey=70
+            Z_HighKey=70
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_71
+            Z_LowKey=71
+            Z_HighKey=71
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_72
+            Z_LowKey=72
+            Z_HighKey=72
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_73
+            Z_LowKey=73
+            Z_HighKey=73
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_74
+            Z_LowKey=74
+            Z_HighKey=74
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_72
+            Z_LowKey=75
+            Z_HighKey=75
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_76
+            Z_LowKey=76
+            Z_HighKey=76
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_77
+            Z_LowKey=77
+            Z_HighKey=77
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_78
+            Z_LowKey=78
+            Z_HighKey=78
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_79
+            Z_LowKey=79
+            Z_HighKey=79
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_80
+            Z_LowKey=80
+            Z_HighKey=80
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_81
+            Z_LowKey=81
+            Z_HighKey=81
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_82
+            Z_LowKey=82
+            Z_HighKey=82
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_83
+            Z_LowKey=83
+            Z_HighKey=83
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_84
+            Z_LowKey=84
+            Z_HighKey=84
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_85
+            Z_LowKey=85
+            Z_HighKey=85
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_86
+            Z_LowKey=86
+            Z_HighKey=86
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_87
+            Z_LowKey=87
+            Z_HighKey=87
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_88
+            Z_LowKey=88
+            Z_HighKey=88
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_89
+            Z_LowKey=89
+            Z_HighKey=89
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_90
+            Z_LowKey=90
+            Z_HighKey=90
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_91
+            Z_LowKey=91
+            Z_HighKey=91
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_92
+            Z_LowKey=92
+            Z_HighKey=92
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_93
+            Z_LowKey=93
+            Z_HighKey=93
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_94
+            Z_LowKey=94
+            Z_HighKey=94
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_95
+            Z_LowKey=95
+            Z_HighKey=95
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_96
+            Z_LowKey=96
+            Z_HighKey=96
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_97
+            Z_LowKey=97
+            Z_HighKey=97
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_98
+            Z_LowKey=98
+            Z_HighKey=98
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_99
+            Z_LowKey=99
+            Z_HighKey=99
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_100
+            Z_LowKey=100
+            Z_HighKey=100
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+         Sample=piano_101
+            Z_LowKey=101
+            Z_HighKey=101
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_102
+            Z_LowKey=102
+            Z_HighKey=102
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_103
+            Z_LowKey=103
+            Z_HighKey=103
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_104
+            Z_LowKey=104
+            Z_HighKey=104
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_105
+            Z_LowKey=105
+            Z_HighKey=105
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_106
+            Z_LowKey=106
+            Z_HighKey=106
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_107
+            Z_LowKey=107
+            Z_HighKey=107
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_108
+            Z_LowKey=108
+            Z_HighKey=108
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_109
+            Z_LowKey=109
+            Z_HighKey=109
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_110
+            Z_LowKey=110
+            Z_HighKey=110
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_111
+            Z_LowKey=111
+            Z_HighKey=111
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_112
+            Z_LowKey=112
+            Z_HighKey=112
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_113
+            Z_LowKey=113
+            Z_HighKey=113
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_114
+            Z_LowKey=114
+            Z_HighKey=114
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_115
+            Z_LowKey=115
+            Z_HighKey=115
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_116
+            Z_LowKey=116
+            Z_HighKey=116
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_117
+            Z_LowKey=117
+            Z_HighKey=117
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_118
+            Z_LowKey=118
+            Z_HighKey=118
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=piano_119
+            Z_LowKey=119
+            Z_HighKey=119
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
 
     InstrumentName=Pibgorn
 
@@ -5664,7 +6367,7 @@
 
         Instrument=Drums
             L_LowKey=36
-            L_HighKey=72
+            L_HighKey=42
             L_LowVelocity=0
             L_HighVelocity=127
 
@@ -5759,6 +6462,15 @@
             L_LowVelocity=0
             L_HighVelocity=127
 
+	PresetName=Piano
+        Bank=0
+        Program=1
+
+        Instrument=Piano
+            L_LowKey=36
+            L_HighKey=119
+            L_LowVelocity=0
+            L_HighVelocity=127
 
     PresetName=Pibgorn
         Bank=0
@@ -5833,5 +6545,5 @@ Date=4/12/2015 12:34:56 PM
 Designer=Digero
 Product=Maestro
 Copyright=Turbine Entertainment
-Editor=Digero
+Editor=z00t
 Comments=

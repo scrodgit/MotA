@@ -41,6 +41,10 @@ import com.digero.maestro.midi.TrackInfo;
 
 public class NoteGraph extends JPanel implements Listener<SequencerEvent>, IDiscardable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7963266918405928225L;
 	protected final SequencerWrapper sequencer;
 	protected SequenceInfo sequenceInfo;
 	protected TrackInfo trackInfo;
@@ -59,7 +63,7 @@ public class NoteGraph extends JPanel implements Listener<SequencerEvent>, IDisc
 	private ColorTable noteOnColor = ColorTable.NOTE_ON;
 	private ColorTable noteOnBorder = ColorTable.NOTE_ON_BORDER;
 
-	private boolean octaveLinesVisible = false;
+	private boolean octaveLinesVisible = true;
 
 	private Color[] noteColorByDynamics = new Color[Dynamics.values().length];
 	private Color[] badNoteColorByDynamics = new Color[Dynamics.values().length];

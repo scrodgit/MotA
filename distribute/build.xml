@@ -84,7 +84,7 @@
 	</target>
 
 	<target name="GenerateSoundFontInfo" depends="GenerateSoundFontInfo.CheckUpToDate" unless="GenerateSoundFontInfo.uptodate">
-		<java classname="com.digero.tools.soundfont.GenerateSoundFontInfo" classpath="${bin}" fork="yes" failonerror="yes">
+		<java classname="com.digero.tools.soundfont.GenerateSoundFontInfo" classpath="${bin}" fork="yes" failonerror="false">
 			<arg value="${basedir}/${audio}/LotroInstruments" />
 			<arg value="${basedir}/${audio}/LotroInstruments/LotroInstruments.txt" />
 		</java>

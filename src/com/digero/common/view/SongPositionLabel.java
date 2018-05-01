@@ -11,6 +11,10 @@ import com.digero.common.util.Util;
 
 public class SongPositionLabel extends JLabel implements Listener<SequencerEvent>, IDiscardable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5974589124864545998L;
 	private SequencerWrapper sequencer;
 	private boolean adjustForTempo;
 	private long initialOffsetTick = 0;

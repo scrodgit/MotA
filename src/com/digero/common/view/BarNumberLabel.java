@@ -11,6 +11,10 @@ import com.digero.common.util.Listener;
 
 public class BarNumberLabel extends JLabel implements Listener<SequencerEvent>, IDiscardable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6095617378610545719L;
 	private IBarNumberCache barNumberCache;
 	private SequencerWrapper sequencer;
 	private long initialOffsetTick = 0;

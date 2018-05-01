@@ -22,6 +22,10 @@ import com.digero.common.util.Util;
 
 public class TempoBar extends JPanel implements Listener<SequencerEvent>
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1913144062634575736L;
 	private static final int PTR_WIDTH = 12;
 	private static final int PTR_HEIGHT = 12;
 	private static final int BAR_HEIGHT = 6;

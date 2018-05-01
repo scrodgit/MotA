@@ -4,6 +4,11 @@ import java.util.EventObject;
 
 public class AbcSongEvent extends EventObject
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5302523053338904767L;
+
 	public enum AbcSongProperty
 	{
 		TITLE, //

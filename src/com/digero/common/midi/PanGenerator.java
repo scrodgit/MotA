@@ -110,9 +110,10 @@ public class PanGenerator
 			case BASIC_LUTE:
 			case LUTE_OF_AGES:
 			case TRAVELLERS_TRUSTY_FIDDLE:
+			case PIANO:
 				return CENTER + sign * 35;
 			case CLARINET:
-				return CENTER + sign * 45;
+				return CENTER + sign * 45;			
 		}
 
 		return CENTER;

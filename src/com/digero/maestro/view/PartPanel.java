@@ -127,7 +127,7 @@ public class PartPanel extends JPanel implements ICompileConstants, TableLayoutC
 		});
 
 		instrumentComboBox = new JComboBox<LotroInstrument>();
-		instrumentComboBox.setMaximumRowCount(LotroInstrument.values().length);
+		instrumentComboBox.setMaximumRowCount(2);
 		instrumentComboBox.addActionListener(new ActionListener()
 		{
 			@Override public void actionPerformed(ActionEvent e)

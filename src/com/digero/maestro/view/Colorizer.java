@@ -19,6 +19,10 @@ import com.digero.common.view.ColorTable;
 
 public class Colorizer extends JPanel
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3464893008812389413L;
 	private JComboBox<ColorTable> picker;
 	private SpinnerNumberModel hue;
 	private SpinnerNumberModel sat;

@@ -33,6 +33,10 @@ public class TempoPanel extends JPanel implements IDiscardable, TableLayoutConst
 	//   |   |                   |           |  +---------------+  |
 	//   +---+-------------------+-----------+---------------------+
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2084639434734998173L;
 	static final int GUTTER_COLUMN = 0;
 	static final int TITLE_COLUMN = 1;
 	static final int TEMPO_COLUMN = 2;
@@ -168,6 +172,10 @@ public class TempoPanel extends JPanel implements IDiscardable, TableLayoutConst
 
 	private class TempoNoteGraph extends NoteGraph
 	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -4900864421491909424L;
 		private final int minBPM;
 		private final int maxBPM;
 		private List<NoteEvent> events;

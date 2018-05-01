@@ -43,6 +43,10 @@ import com.digero.maestro.abc.PartNameTemplate;
 
 public class SettingsDialog extends JDialog implements TableLayoutConstants
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7265961535014966086L;
 	public static final int NUMBERING_TAB = 0;
 	public static final int NAME_TEMPLATE_TAB = 1;
 	public static final int SAVE_EXPORT_TAB = 2;
@@ -102,6 +106,11 @@ public class SettingsDialog extends JDialog implements TableLayoutConstants
 				CLOSE_WINDOW_ACTION);
 		getRootPane().getActionMap().put(CLOSE_WINDOW_ACTION, new AbstractAction()
 		{
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = -5870323868128614808L;
+
 			@Override public void actionPerformed(ActionEvent e)
 			{
 				success = false;
@@ -241,6 +250,10 @@ public class SettingsDialog extends JDialog implements TableLayoutConstants
 
 	private class InstrumentSpinner extends JSpinner implements ChangeListener
 	{
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -5353527525708495074L;
 		private LotroInstrument instrument;
 
 		public InstrumentSpinner(LotroInstrument instrument)
