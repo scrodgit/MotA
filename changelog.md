@@ -20,7 +20,7 @@ v0.3
 
 v0.2
 ----------
-- Set proper Min/Max octaves for SotA
+- Set proper Min/Max octaves to reflect SotA's expanded scale
 - Apply commas and apostrophes at correct octaves (dirty!)
 - Renamed instruments to denote LOTRO/SotA until LOTRO instruments are replaced/removed
 
