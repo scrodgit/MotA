@@ -28,28 +28,28 @@ public class PartAutoNumberer
 			{
 				prefs.putBoolean("newCowbellDefaults", true);
 				prefs.remove(LotroInstrument.COWBELL.toString());
-				prefs.remove(LotroInstrument.MOOR_COWBELL.toString());
+				//prefs.remove(LotroInstrument.MOOR_COWBELL.toString());
 			}
 
 			init(prefs, LotroInstrument.LUTE_OF_AGES, prefs.getInt("Lute", 1 * x10)); // Lute was renamed to Lute of Ages
-			init(prefs, LotroInstrument.BASIC_LUTE, LotroInstrument.LUTE_OF_AGES);
+			//init(prefs, LotroInstrument.BASIC_LUTE, LotroInstrument.LUTE_OF_AGES);
 			init(prefs, LotroInstrument.HARP, 2 * x10);
-			init(prefs, LotroInstrument.MISTY_MOUNTAIN_HARP, LotroInstrument.HARP);
-			init(prefs, LotroInstrument.THEORBO, 3 * x10);
+			//init(prefs, LotroInstrument.MISTY_MOUNTAIN_HARP, LotroInstrument.HARP);
+			//init(prefs, LotroInstrument.THEORBO, 3 * x10);
 			init(prefs, LotroInstrument.FLUTE, 4 * x10);
-			init(prefs, LotroInstrument.CLARINET, 5 * x10);
-			init(prefs, LotroInstrument.HORN, 6 * x10);
+			//init(prefs, LotroInstrument.CLARINET, 5 * x10);
+			//init(prefs, LotroInstrument.HORN, 6 * x10);
 			init(prefs, LotroInstrument.BAGPIPE, 7 * x10);
-			init(prefs, LotroInstrument.PIBGORN, LotroInstrument.BAGPIPE);
+			//init(prefs, LotroInstrument.PIBGORN, LotroInstrument.BAGPIPE);
 			init(prefs, LotroInstrument.DRUMS, 8 * x10);
 			init(prefs, LotroInstrument.COWBELL, LotroInstrument.DRUMS);
-			init(prefs, LotroInstrument.MOOR_COWBELL, LotroInstrument.DRUMS);
-			init(prefs, LotroInstrument.BASIC_FIDDLE, 9 * x10);
-			init(prefs, LotroInstrument.BARDIC_FIDDLE, LotroInstrument.BASIC_FIDDLE);
-			init(prefs, LotroInstrument.STUDENT_FIDDLE, LotroInstrument.BASIC_FIDDLE);
-			init(prefs, LotroInstrument.LONELY_MOUNTAIN_FIDDLE, LotroInstrument.BASIC_FIDDLE);
-			init(prefs, LotroInstrument.SPRIGHTLY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
-			init(prefs, LotroInstrument.TRAVELLERS_TRUSTY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			//init(prefs, LotroInstrument.MOOR_COWBELL, LotroInstrument.DRUMS);
+			//init(prefs, LotroInstrument.BASIC_FIDDLE, 9 * x10);
+			//init(prefs, LotroInstrument.BARDIC_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			//init(prefs, LotroInstrument.STUDENT_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			//init(prefs, LotroInstrument.LONELY_MOUNTAIN_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			//init(prefs, LotroInstrument.SPRIGHTLY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
+			//init(prefs, LotroInstrument.TRAVELLERS_TRUSTY_FIDDLE, LotroInstrument.BASIC_FIDDLE);
 			init(prefs, LotroInstrument.PIANO, 10 * x10);
 
 			assert (firstNumber.size() == LotroInstrument.values().length);

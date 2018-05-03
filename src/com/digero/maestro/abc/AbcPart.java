@@ -286,8 +286,8 @@ public class AbcPart implements AbcPartMetadataSource, NumberedAbcPart, IDiscard
 			int dstNote;
 			if (instrument == LotroInstrument.COWBELL)
 				dstNote = Note.G2.id; // "Tom High 1"
-			else if (instrument == LotroInstrument.MOOR_COWBELL)
-				dstNote = Note.A2.id; // "Tom High 2"
+			//else if (instrument == LotroInstrument.MOOR_COWBELL)
+				//dstNote = Note.A2.id; // "Tom High 2"
 			else
 				dstNote = getDrumMap(track).get(noteId);
 
@@ -567,7 +567,7 @@ public class AbcPart implements AbcPartMetadataSource, NumberedAbcPart, IDiscard
 
 	public boolean isCowbellPart()
 	{
-		return instrument == LotroInstrument.COWBELL || instrument == LotroInstrument.MOOR_COWBELL;
+		return instrument == LotroInstrument.COWBELL; //|| instrument == LotroInstrument.MOOR_COWBELL;
 	}
 
 	public boolean isDrumTrack(int track)

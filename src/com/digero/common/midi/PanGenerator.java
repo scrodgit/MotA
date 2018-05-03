@@ -44,22 +44,22 @@ public class PanGenerator
 	{
 		switch (instrument)
 		{
-			case TRAVELLERS_TRUSTY_FIDDLE:
-			case BASIC_LUTE:
-				instrument = LotroInstrument.LUTE_OF_AGES;
-				break;
-			case SPRIGHTLY_FIDDLE:
-			case MISTY_MOUNTAIN_HARP:
-				instrument = LotroInstrument.HARP;
-				break;
-			case MOOR_COWBELL:
-				instrument = LotroInstrument.COWBELL;
-				break;
-			case STUDENT_FIDDLE:
-			case LONELY_MOUNTAIN_FIDDLE:
-			case BARDIC_FIDDLE:
-				instrument = LotroInstrument.BASIC_FIDDLE;
-				break;
+			//case TRAVELLERS_TRUSTY_FIDDLE:
+			//case BASIC_LUTE:
+				//instrument = LotroInstrument.LUTE_OF_AGES;
+				//break;
+			//case SPRIGHTLY_FIDDLE:
+			//case MISTY_MOUNTAIN_HARP:
+				//instrument = LotroInstrument.HARP;
+				//break;
+			//case MOOR_COWBELL:
+				//instrument = LotroInstrument.COWBELL;
+				//break;
+			//case STUDENT_FIDDLE:
+			//case LONELY_MOUNTAIN_FIDDLE:
+			//case BARDIC_FIDDLE:
+				//instrument = LotroInstrument.BASIC_FIDDLE;
+				//break;
 			//$CASES-OMITTED$
 			default:
 				break;
@@ -83,37 +83,37 @@ public class PanGenerator
 
 		switch (instrument)
 		{
-			case BARDIC_FIDDLE:
-			case BASIC_FIDDLE:
-			case LONELY_MOUNTAIN_FIDDLE:
-			case STUDENT_FIDDLE:
-				return CENTER + sign * -50;
 			case HARP:
-			case MISTY_MOUNTAIN_HARP:
-			case SPRIGHTLY_FIDDLE:
+			//case MISTY_MOUNTAIN_HARP:
+			//case SPRIGHTLY_FIDDLE:
 				return CENTER + sign * -45;
+			//case BARDIC_FIDDLE:
+			//case BASIC_FIDDLE:
+			//case LONELY_MOUNTAIN_FIDDLE:
+			//case STUDENT_FIDDLE:
+			//return CENTER + sign * -50;
 			case FLUTE:
 				return CENTER + sign * -40;
 			case BAGPIPE:
 				return CENTER + sign * -30;
-			case THEORBO:
-				return CENTER + sign * -25;
+			//case THEORBO:
+				//return CENTER + sign * -25;
 			case COWBELL:
-			case MOOR_COWBELL:
+			//case MOOR_COWBELL:
 				return CENTER + sign * -15;
 			case DRUMS:
 				return CENTER + sign * 15;
-			case PIBGORN:
-				return CENTER + sign * 20;
-			case HORN:
-				return CENTER + sign * 25;
-			case BASIC_LUTE:
+			//case PIBGORN:
+				//return CENTER + sign * 20;
+			//case HORN:
+				//return CENTER + sign * 25;
+			//case BASIC_LUTE:
 			case LUTE_OF_AGES:
-			case TRAVELLERS_TRUSTY_FIDDLE:
+			//case TRAVELLERS_TRUSTY_FIDDLE:
 			case PIANO:
 				return CENTER + sign * 35;
-			case CLARINET:
-				return CENTER + sign * 45;			
+			//case CLARINET:
+				//return CENTER + sign * 45;			
 		}
 
 		return CENTER;

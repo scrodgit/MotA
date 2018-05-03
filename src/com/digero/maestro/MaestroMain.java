@@ -14,7 +14,8 @@ import com.digero.maestro.view.ProjectFrame;
 public class MaestroMain
 {
 	public static final String APP_NAME = "Maestro of the Avatar";
-	public static final String APP_URL = "https://github.com/z00t/sota-composer/";
+	public static final String APP_NICK = "MotA";
+	public static final String APP_URL = "https://github.com/z00t/MotA/";
 	public static Version APP_VERSION = new Version(0, 0, 0);
 
 	private static ProjectFrame mainWindow = null;

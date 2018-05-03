@@ -34,32 +34,32 @@ public class GenerateSoundFontInfo
 				return 1;
 
 			case LUTE_OF_AGES:
-			case BASIC_LUTE:
+			//case BASIC_LUTE:
 			case HARP:
-			case BARDIC_FIDDLE:
+			//case BARDIC_FIDDLE:
 			case PIANO:	
 				return 1;
 
-			case MISTY_MOUNTAIN_HARP:
-			case THEORBO:
-			case BASIC_FIDDLE:
-			case LONELY_MOUNTAIN_FIDDLE:
-			case SPRIGHTLY_FIDDLE:
-			case TRAVELLERS_TRUSTY_FIDDLE:
+			//case MISTY_MOUNTAIN_HARP:
+			//case THEORBO:
+			//case BASIC_FIDDLE:
+			//case LONELY_MOUNTAIN_FIDDLE:
+			//case SPRIGHTLY_FIDDLE:
+			//case TRAVELLERS_TRUSTY_FIDDLE:
 			case FLUTE:
-			case CLARINET:
-			case HORN:
-				return 2;
+			//case CLARINET:
+			//case HORN:
+				//return 2;
 
 			case BAGPIPE:
 				return 4;
 
-			case PIBGORN:
-				return 6;
+			//case PIBGORN:
+				//return 6;
 
-			case STUDENT_FIDDLE:
+			//case STUDENT_FIDDLE:
 			case COWBELL:
-			case MOOR_COWBELL:
+			//case MOOR_COWBELL:
 			default:
 				throw new RuntimeException();
 		}
@@ -87,18 +87,18 @@ public class GenerateSoundFontInfo
 			if (cowbellSample == null || sample.key.lotroInstrument == LotroInstrument.COWBELL)
 				cowbellSample = sample;
 
-			if (moorCowbellSample == null || sample.key.lotroInstrument == LotroInstrument.MOOR_COWBELL)
-				moorCowbellSample = sample;
+			//if (moorCowbellSample == null || sample.key.lotroInstrument == LotroInstrument.MOOR_COWBELL)
+				//moorCowbellSample = sample;
 		}
 
 		SortedSet<SampleInfo> usedSamples = new TreeSet<SampleInfo>();
 		SortedSet<InstrumentInfo> instruments = new TreeSet<InstrumentInfo>();
 		SortedSet<PresetInfo> presets = new TreeSet<PresetInfo>();
-		InstrumentInfo basicFiddleInfo = null;
+		//InstrumentInfo basicFiddleInfo = null;
 
 		for (LotroInstrument li : LotroInstrument.values())
 		{
-			if (li == LotroInstrument.COWBELL || li == LotroInstrument.MOOR_COWBELL)
+			if (li == LotroInstrument.COWBELL) //|| li == LotroInstrument.MOOR_COWBELL)
 			{
 				SampleInfo sample = (li == LotroInstrument.COWBELL) ? cowbellSample : moorCowbellSample;
 				CowbellInfo info = new CowbellInfo(sample);
@@ -122,19 +122,19 @@ public class GenerateSoundFontInfo
 
 				presets.add(new PresetInfo(drones, bagpipe));
 			}
-			else if (li == LotroInstrument.STUDENT_FIDDLE)
-			{
-				StandardInstrumentInfo flubs = new StandardInstrumentInfo(li, li + " Flubs", li.lowestPlayable.id,
-						AbcConstants.STUDENT_FIDDLE_LAST_FLUB_NOTE_ID, 1, samples);
-				instruments.add(flubs);
-				usedSamples.addAll(flubs.usedSamples);
+			//else if (li == LotroInstrument.STUDENT_FIDDLE)
+			//{
+			//	StandardInstrumentInfo flubs = new StandardInstrumentInfo(li, li + " Flubs", li.lowestPlayable.id,
+			//			AbcConstants.STUDENT_FIDDLE_LAST_FLUB_NOTE_ID, 1, samples);
+			//	instruments.add(flubs);
+			//	usedSamples.addAll(flubs.usedSamples);
 
 				// Share the part of the Basic Fiddle instrument that's playable on the Student's Fiddle
-				InstrumentInfoSubrange basicFiddleSubrange = new InstrumentInfoSubrange(li, basicFiddleInfo,
-						AbcConstants.STUDENT_FIDDLE_LAST_FLUB_NOTE_ID + 1, li.highestPlayable.id);
+			//	InstrumentInfoSubrange basicFiddleSubrange = new InstrumentInfoSubrange(li, basicFiddleInfo,
+			//			AbcConstants.STUDENT_FIDDLE_LAST_FLUB_NOTE_ID + 1, li.highestPlayable.id);
 
-				presets.add(new PresetInfo(flubs, basicFiddleSubrange));
-			}
+			//	presets.add(new PresetInfo(flubs, basicFiddleSubrange));
+			//}
 			else
 			{
 				StandardInstrumentInfo info = new StandardInstrumentInfo(li, getNotesPerSample(li), samples);
@@ -143,8 +143,8 @@ public class GenerateSoundFontInfo
 
 				presets.add(new PresetInfo(info));
 
-				if (li == LotroInstrument.BASIC_FIDDLE)
-					basicFiddleInfo = info;
+				//if (li == LotroInstrument.BASIC_FIDDLE)
+					//basicFiddleInfo = info;
 			}
 		}
 
@@ -174,7 +174,7 @@ public class GenerateSoundFontInfo
 			{
 				preset.print(out);
 				// Also add Lute as the default instrument (program 0)
-				if (preset.lotroInstrument == LotroInstrument.LUTE_OF_AGES)
+				if (preset.lotroInstrument == LotroInstrument.PIANO)
 					preset.print(out, preset.lotroInstrument + "1", 0);
 			}
 

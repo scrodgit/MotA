@@ -128,7 +128,7 @@ public class SettingsDialog extends JDialog implements TableLayoutConstants
 		buttonsContainerPanel.add(buttonsPanel);
 
 		tabPanel = new JTabbedPane();
-		tabPanel.addTab("ABC Part Numbering", createNumberingPanel()); // NUMBERING_TAB
+		//tabPanel.addTab("ABC Part Numbering", createNumberingPanel()); // NUMBERING_TAB
 		tabPanel.addTab("ABC Part Naming", createNameTemplatePanel()); // NAME_TEMPLATE_TAB
 		tabPanel.addTab("Save & Export", createSaveAndExportSettingsPanel()); // SAVE_EXPORT_TAB
 

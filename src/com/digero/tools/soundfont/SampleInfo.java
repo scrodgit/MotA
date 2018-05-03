@@ -79,7 +79,7 @@ public class SampleInfo implements Comparable<SampleInfo>
 		LotroInstrument lotroInstrument = LotroInstrument.parseInstrument(matcher.group(FILE_INSTRUMENT_GROUP));
 
 		int noteId;
-		if (lotroInstrument == LotroInstrument.COWBELL || lotroInstrument == LotroInstrument.MOOR_COWBELL)
+		if (lotroInstrument == LotroInstrument.COWBELL) //|| lotroInstrument == LotroInstrument.MOOR_COWBELL)
 			noteId = AbcConstants.COWBELL_NOTE_ID;
 		else
 			noteId = Integer.parseInt(matcher.group(FILE_NOTEID_GROUP));

@@ -862,6 +862,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 				{
 					setVisible(false);
 					dispose();
+					System.exit(0);
 				}
 			}
 		});
@@ -884,7 +885,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 
 		toolsMenu.addSeparator();
 
-		JMenuItem aboutItem = toolsMenu.add(new JMenuItem("About " + MaestroMain.APP_NAME + "..."));
+		JMenuItem aboutItem = toolsMenu.add(new JMenuItem("About " + MaestroMain.APP_NICK + "..."));
 		aboutItem.setMnemonic('A');
 		aboutItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, 0));
 		aboutItem.addActionListener(new ActionListener()
@@ -1217,7 +1218,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 				@Override public void run()
 				{
 					updateTitlePending = false;
-					String title = MaestroMain.APP_NAME;
+					String title = MaestroMain.APP_NICK;
 					if (abcSong != null)
 					{
 						if (abcSong.getSaveFile() != null)
