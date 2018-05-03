@@ -1,7 +1,7 @@
 
 v0.6
 ----------
-- 64-bit version (32-bit will still be available)
+- 64-bit version (32-bit will still be available for now)
 
 v0.5
 ----------
