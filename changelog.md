@@ -10,7 +10,7 @@ v0.5
 v0.4
 ----------
 - Resolved an issue with Maestro remaining as a background process (Recommended to Digero for implementation in vanilla Maestro)
-- Updated UI about section
+- Updated UI "about" section
 
 v0.3
 ----------
