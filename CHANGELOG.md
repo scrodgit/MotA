@@ -2,10 +2,11 @@
 v0.6
 ----------
 - 64-bit version (32-bit will still be available for now)
+- Removed a bunch of LOTRO instruments and bloat
 
 v0.5
 ----------
-- DRUMS!
+- DRUMS! Samples & Mapped
 
 v0.4
 ----------
