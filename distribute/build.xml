@@ -50,17 +50,17 @@
 
 	<target name="Exe.CheckUpToDate">
 		<uptodate property="MaestroExe.uptodate" targetfile="${build}/${basename.Maestro}.exe">
-			<srcfiles dir="${basedir}" includes="${tools}/WinRun4J64.exe,${tools}/rcedit64.exe,${basename.Maestro}.rcedit.ini,${basename.Maestro}.ini,${basename.Maestro}.ico" />
+			<srcfiles dir="${basedir}" includes="${tools}/WinRun4J.exe,${tools}/rcedit.exe,${basename.Maestro}.rcedit.ini,${basename.Maestro}.ini,${basename.Maestro}.ico" />
 		</uptodate>
 		<uptodate property="AbcPlayerExe.uptodate" targetfile="${build}/${basename.AbcPlayer}.exe">
-			<srcfiles dir="${basedir}" includes="${tools}/WinRun4J64.exe,${tools}/rcedit64.exe,${basename.AbcPlayer}.rcedit.ini,${basename.AbcPlayer}.ini,${basename.AbcPlayer}.ico" />
+			<srcfiles dir="${basedir}" includes="${tools}/WinRun4J.exe,${tools}/rcedit.exe,${basename.AbcPlayer}.rcedit.ini,${basename.AbcPlayer}.ini,${basename.AbcPlayer}.ico" />
 		</uptodate>
 	</target>
 
 	<target name="MaestroExe" depends="MaestroJar,Exe.CheckUpToDate" unless="MaestroExe.uptodate">
-		<copy file="${tools}/WinRun4J64.exe" tofile="${build}/${basename.Maestro}.exe" overwrite="true" />
+		<copy file="${tools}/WinRun4J.exe" tofile="${build}/${basename.Maestro}.exe" overwrite="true" />
 		<echo>Running rcedit.exe</echo>
-		<exec executable="${tools}/rcedit64.exe" failonerror="true">
+		<exec executable="${tools}/rcedit.exe" failonerror="true">
 			<arg value="/W" />
 			<arg value="${build}/${basename.Maestro}.exe" />
 			<arg value="${basename.Maestro}.rcedit.ini" />
@@ -68,9 +68,9 @@
 	</target>
 
 	<target name="AbcPlayerExe" depends="AbcPlayerJar,Exe.CheckUpToDate" unless="AbcPlayerExe.uptodate">
-		<copy file="${tools}/WinRun4J64.exe" tofile="${build}/${basename.AbcPlayer}.exe" overwrite="true" />
+		<copy file="${tools}/WinRun4J.exe" tofile="${build}/${basename.AbcPlayer}.exe" overwrite="true" />
 		<echo>Running rcedit.exe</echo>
-		<exec executable="${tools}/rcedit64.exe" failonerror="true">
+		<exec executable="${tools}/rcedit.exe" failonerror="true">
 			<arg value="/W" />
 			<arg value="${build}/${basename.AbcPlayer}.exe" />
 			<arg value="AbcPlayer.rcedit.ini" />
