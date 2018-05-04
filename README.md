@@ -4,6 +4,9 @@ Maestro and ABC Player port for Shroud of the Avatar: Forsaken Virtues
 ----------
 
 # FAQ
+
+----------
+
 ## Who are you?
 Hi, I'm z00t. In-game I go by Lars Ulrich. I'm an avid gamer of over 25 years with a background in IT/Programming, and a passion for music. What brought me to SotA was a stream by a friend who was playing 
 the game that came across another player with a one-man band. I was fascinated by this marvelous contraption being played- I had played other games (Mabinogi, LOTRO, Archeage) with MML/ABC capability, but this was just taking it to another level in my mind. I had to experience it myself. I downloaded the game, brushed off an old hard drive with my vaulted ABC and MML files, and took off.
