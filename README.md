@@ -34,5 +34,5 @@ MotA is free to use, and open-source like it's parent. While free, donations of 
 ## Will MotA be updated?
 I will update MotA for as long as I play. The code will always be open-source, so anyone with the aptitude could simply succeed me and make it their own.
 
-==WIP==
-NOTE: No compiled binaries will be posted on Git. Links to download will be provided at release/
+## ==WIP==
+NOTE: No compiled binaries will be posted on Git. Links to download will be provided at release.
