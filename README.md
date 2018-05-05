@@ -7,16 +7,6 @@ Maestro and ABC Player port for Shroud of the Avatar: Forsaken Virtues
 
 ----------
 
-## Who are you?
-Hi, I'm z00t. In-game I go by Lars Ulrich. I'm an avid gamer of over 25 years with a background in IT/Programming, and a passion for music. What brought me to SotA was a stream by a friend who was playing 
-the game that came across another player with a one-man band. I was fascinated by this marvelous contraption being played- I had played other games (Mabinogi, LOTRO, Archeage) with MML/ABC capability, but this was just taking it to another level in my mind. I had to experience it myself. I downloaded the game, brushed off an old hard drive with my vaulted ABC and MML files, and took off.
-
-After figuring out the basics of the game's ABC framework, I picked up my first lute in Soltown and began playing. Memories began to flow, players stopped in their tracks to listen. Music had gotten me my
-first friend request without a spoken word. I found out later he's actually part of the russian community, and doesn't speak english. He recognized the tune much faster than he would have been able to recognize anything pretty much beyond "hi".
-
-Shortly after, I was joined by a fellow Bard. We went toe-to-toe, song-for-song for what felt like hours. Then, he broke out an OMB. There it was, before me in all it's glory. My quest in Shroud of the Avatar would not be to slay dragons, but boost the morale and ability of those who would with song...and sound a lot better doing it than I did coming out the gate.
-
-
 ## What is MotA?
 Maestro of the Avatar (MotA) is a MIDI-to-ABC converter for Shroud of the Avatar: Forsaken Virtues. It's been modded/converted from Maestro; a well known open-source ABC Converter for Lord of the Rings
 Online (LOTRO) to support SotA's musical scale and instrumentation.
