@@ -27,8 +27,6 @@
 	</target>
 
 	<target name="CommonJar" depends="PreBuild">
-		<mkdir dir="${bin}" />
-		<mkdir dir="${bin}/64" />
 		<jar destfile="${build}/64/${basename.Common}.jar" basedir="${bin}" includes="com/digero/common/**" />
 	</target>
 
