@@ -19,7 +19,7 @@
 
 	<target name="PreBuild">
 		<mkdir dir="${build}/64/" />
-		<delete file="${build}/64/*.log" />
+		<delete file="${build}/64/*.log" failonerror="false"/>
 		<copy file="../TableLayout.jar" todir="${build}/64/" />
 		<copy file="abcfile.ico" todir="${build}/64/" />
 		<copy file="midifile.ico" todir="${build}/64/" />
@@ -27,6 +27,8 @@
 	</target>
 
 	<target name="CommonJar" depends="PreBuild">
+		<mkdir dir="${bin}" />
+		<mkdir dir="${bin}/64" />
 		<jar destfile="${build}/64/${basename.Common}.jar" basedir="${bin}" includes="com/digero/common/**" />
 	</target>
 
