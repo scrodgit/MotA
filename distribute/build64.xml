@@ -19,7 +19,7 @@
 
 	<target name="PreBuild">
 		<mkdir dir="${build}/64/" />
-		<delete file="${build}/64/*.log" failonerror="false"/>
+		<delete dir="${build}/64/" includes="*.log" failonerror="false" />
 		<copy file="../TableLayout.jar" todir="${build}/64/" />
 		<copy file="abcfile.ico" todir="${build}/64/" />
 		<copy file="midifile.ico" todir="${build}/64/" />
