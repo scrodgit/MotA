@@ -1,8 +1,8 @@
-C2	=> Kick
-Cs2	=> Kick
-D2	=> Low Tom
-Ds2	=> High Tom
-E2	=> Slap
-F2	=> Snare
-Fs2	=> Clap
-G2	=> Kick
+C6	=> 1- Kick
+Cs6	=> 1- Kick
+D6	=> 2- Low Tom
+Ds6	=> 3- High Tom
+E6	=> 4- Slap
+F6	=> 5- Snare
+Fs6	=> 6- Clap
+G6	=> 7- Kick

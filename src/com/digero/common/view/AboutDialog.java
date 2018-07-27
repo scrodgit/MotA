@@ -35,7 +35,8 @@ public final class AboutDialog
 		JLabel aboutMessage = new JLabel("<html>" //
 				+ appName + "<br>" //
 				+ "Version " + appVersion + "<br>" //
-				+ "Modded by z00t (Lars Ulrich) & scroda<br>"
+				+ "Modded by scroda<br>"
+				+ "Modded by z00t (Lars Ulrich)<br>"
 				+ "Created by Digero of Landroval<br>" //
 				+ "Copyright &copy; 2015 Ben Howell<br>" //
 				+ "<a href='" + appUrl + "'>" + appUrl + "</a>" //

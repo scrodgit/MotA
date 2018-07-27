@@ -34,9 +34,10 @@ import com.digero.common.util.Pair;
 public enum LotroInstrument
 {
 	                       //friendlyName                          sustain  midi  octave  percussion  dBAdjust
-	PIANO                    ( "Piano",                             false,    1,     -1,      false,   -19.0f),
+	LUTE_OF_AGES             ( "Lute",								false,   24,      0,      false,     0.0f),
 	DRUMS                    ( "Drums",                             false,  118,      0,       true,     0.0f),
-	LUTE_OF_AGES             ( "Lute",                      false,   24,      0,      false,     0.0f),
+//	PIANO                    ( "Piano",                             false,    1,     -1,      false,   -19.0f),
+	PIANO                    ( "Piano",                             false,    1,     0,      false,   -19.0f),
 	//BASIC_LUTE               ( "Basic Lute",                        false,   25,      0,      false,   -19.0f),
 	HARP                     ( "Harp",                              false,   46,      0,      false,     6.0f),
 	//MISTY_MOUNTAIN_HARP      ( "Misty Mountain Harp",               false,   27,      0,      false,   -12.5f),
@@ -57,10 +58,10 @@ public enum LotroInstrument
 // @formatter:on
 
 	//public static final LotroInstrument DEFAULT_FIDDLE = BARDIC_FIDDLE;
-	//public static final LotroInstrument DEFAULT_INSTRUMENT = LUTE_OF_AGES;
+	public static final LotroInstrument DEFAULT_INSTRUMENT = LUTE_OF_AGES;
     public static final LotroInstrument DEFAULT_LUTE = LUTE_OF_AGES;
 	//public static final LotroInstrument DEFAULT_FIDDLE = BARDIC_FIDDLE;
-	public static final LotroInstrument DEFAULT_INSTRUMENT = PIANO;
+//	public static final LotroInstrument DEFAULT_INSTRUMENT = PIANO;
 	
 	public final Note lowestPlayable;
 	public final Note highestPlayable;

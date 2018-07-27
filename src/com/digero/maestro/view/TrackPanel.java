@@ -221,7 +221,7 @@ public class TrackPanel extends JPanel implements IDiscardable, TableLayoutConst
 			@Override public void actionPerformed(ActionEvent e)
 			{
 				// Only update the actual ABC part when the user stops dragging the trackVolumeBar
-				if (!trackVolumeBar.isDragging())
+				if (!trackVolumeBar.isDragging() && !trackVolumeBar.isWheeled())
 					abcPart.setTrackVolumeAdjust(trackInfo.getTrackNumber(), trackVolumeBar.getDeltaVolume());
 
 				updateState();
@@ -503,15 +503,16 @@ public class TrackPanel extends JPanel implements IDiscardable, TableLayoutConst
 			updateTitleText();
 		}
 
-		noteGraph.setShowingNoteVelocity(trackVolumeBar.isDragging());
 
-		if (trackVolumeBar.isDragging())
+		if (trackVolumeBar.isDragging() || trackVolumeBar.isWheeled())
 		{
 			noteGraph.setDeltaVolume(trackVolumeBar.getDeltaVolume());
+			noteGraph.setShowingNoteVelocity(true);
 		}
 		else
 		{
 			noteGraph.setDeltaVolume(abcPart.getTrackVolumeAdjust(trackInfo.getTrackNumber()));
+			noteGraph.setShowingNoteVelocity(false);
 		}
 
 		boolean showDrumPanelsNew = abcPart.isDrumPart() && trackEnabled;

@@ -99,6 +99,7 @@ public class PartPanel extends JPanel implements ICompileConstants, TableLayoutC
 			}
 		});
 
+
 		numberSettingsButton = new JButton(IconLoader.getImageIcon("gear_16.png"));
 		numberSettingsButton.setMargin(new Insets(0, 0, 0, 0));
 		numberSettingsButton.setToolTipText("Automatic part numbering options");
@@ -127,7 +128,7 @@ public class PartPanel extends JPanel implements ICompileConstants, TableLayoutC
 		});
 
 		instrumentComboBox = new JComboBox<LotroInstrument>();
-		instrumentComboBox.setMaximumRowCount(2);
+		instrumentComboBox.setMaximumRowCount(7);
 		instrumentComboBox.addActionListener(new ActionListener()
 		{
 			@Override public void actionPerformed(ActionEvent e)

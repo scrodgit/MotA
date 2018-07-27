@@ -60,45 +60,39 @@
         FineTune=0
         Type=1
 
-    SampleName=drums_36
+    SampleName=drums_84
         SampleRate=44100
-        Key=36
+        Key=84
         FineTune=0
         Type=1
 
-    SampleName=drums_37
+    SampleName=drums_88
         SampleRate=44100
-        Key=37
+        Key=88
         FineTune=0
         Type=1
 
-    SampleName=drums_38
+    SampleName=drums_89
         SampleRate=44100
-        Key=38
+        Key=89
         FineTune=0
         Type=1
 
-    SampleName=drums_39
+    SampleName=drums_91
         SampleRate=44100
-        Key=39
+        Key=91
         FineTune=0
         Type=1
 
-    SampleName=drums_40
+    SampleName=drums_93
         SampleRate=44100
-        Key=40
+        Key=93
         FineTune=0
         Type=1
 
-    SampleName=drums_41
+    SampleName=drums_95
         SampleRate=44100
-        Key=41
-        FineTune=0
-        Type=1
-
-    SampleName=drums_42
-        SampleRate=44100
-        Key=42
+        Key=95
         FineTune=0
         Type=1
 
@@ -1539,51 +1533,86 @@
 
     InstrumentName=Drums
 
-        Sample=drums_36
-            Z_LowKey=36
-            Z_HighKey=36
+        Sample=drums_84
+            Z_LowKey=84
+            Z_HighKey=84
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_37
-            Z_LowKey=37
-            Z_HighKey=37
+        Sample=drums_85
+            Z_LowKey=85
+            Z_HighKey=85
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_38
-            Z_LowKey=38
-            Z_HighKey=38
+        Sample=drums_86
+            Z_LowKey=86
+            Z_HighKey=86
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_39
-            Z_LowKey=39
-            Z_HighKey=39
+        Sample=drums_87
+            Z_LowKey=87
+            Z_HighKey=87
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_40
-            Z_LowKey=40
-            Z_HighKey=40
+        Sample=drums_88
+            Z_LowKey=88
+            Z_HighKey=88
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_41
-            Z_LowKey=41
-            Z_HighKey=41
+        Sample=drums_89
+            Z_LowKey=89
+            Z_HighKey=89
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
 
-        Sample=drums_42
-            Z_LowKey=42
-            Z_HighKey=42
+        Sample=drums_90
+            Z_LowKey=90
+            Z_HighKey=90
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=drums_91
+            Z_LowKey=91
+            Z_HighKey=91
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=drums_92
+            Z_LowKey=92
+            Z_HighKey=92
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=drums_93
+            Z_LowKey=93
+            Z_HighKey=93
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=drums_94
+            Z_LowKey=94
+            Z_HighKey=94
+            Z_LowVelocity=0
+            Z_HighVelocity=127
+            Z_releaseVolEnv=-1200
+
+        Sample=drums_95
+            Z_LowKey=95
+            Z_HighKey=95
             Z_LowVelocity=0
             Z_HighVelocity=127
             Z_releaseVolEnv=-1200
@@ -2877,8 +2906,8 @@
         Program=118
 
         Instrument=Drums
-            L_LowKey=36
-            L_HighKey=42
+            L_LowKey=84
+            L_HighKey=95
             L_LowVelocity=0
             L_HighVelocity=127
 
@@ -2951,5 +2980,5 @@ Date=4/12/2015 12:34:56 PM
 Designer=Digero
 Product=Maestro
 Copyright=Turbine Entertainment
-Editor=z00t
+Editor=z00t scrodgit
 Comments=

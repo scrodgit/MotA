@@ -580,7 +580,9 @@ public class NoteGraph extends JPanel implements Listener<SequencerEvent>, IDisc
 			}
 		}
 
-		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		// turned anti aliasing off for mota 
+		//g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
 
 		boolean showNotesOn = isShowingNotesOn() && songPos >= 0;
 		long minSongPos = songPos;
@@ -629,12 +631,17 @@ public class NoteGraph extends JPanel implements Listener<SequencerEvent>, IDisc
 							notesOn = new BitSet(noteEvents.size());
 						notesOn.set(i);
 					}
-					else if (!isNotePlayable(noteId))
+					
+					// disabled bad note coloring for out of octave range notes for mota
+					//!mota!
+/*
+ 					else if (!isNotePlayable(noteId))
 					{
 						if (notesBad == null)
 							notesBad = new BitSet(noteEvents.size());
 						notesBad.set(i);
 					}
+*/
 					else
 					{
 						g2.setColor(getNoteColor(ne));

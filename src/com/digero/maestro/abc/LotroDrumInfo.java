@@ -11,20 +11,41 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
-
+//import java.util.LinkedHashMap;
+//import java.util.LinkedHashSet;
+import java.util.HashSet;
+import java.util.Set;
 import com.digero.common.midi.Note;
+/*
+abstract class Mynote {
+	public Note mynote;
+	public String mynotestring;
+}
+*/
 
 public class LotroDrumInfo implements Comparable<LotroDrumInfo>
 {
+//	upgrayed to TreeMap to sort by id
 	private static Map<Integer, LotroDrumInfo> byId = new HashMap<Integer, LotroDrumInfo>();
+//	private static TreeMap<Integer, LotroDrumInfo> byId = new TreeMap<Integer, LotroDrumInfo>();
+
+	
+//	original sorted map/set
 	private static SortedMap<String, SortedSet<LotroDrumInfo>> byCategory = new TreeMap<String, SortedSet<LotroDrumInfo>>();
+//	private static Map<String, Set<LotroDrumInfo>> byCategory = new TreeMap<String, Set<LotroDrumInfo>>();
+//	private static LinkedHashMap<String, LinkedHashSet<LotroDrumInfo>> byCategory = new LinkedHashMap<String, LinkedHashSet<LotroDrumInfo>>();
 
 	public static final LotroDrumInfo DISABLED = new LotroDrumInfo(Note.REST, "None", "#None");
 	public static final List<LotroDrumInfo> ALL_DRUMS;
 
 	static
 	{
+//		original sorted map/set
 		byCategory.put(DISABLED.category, new TreeSet<LotroDrumInfo>());
+
+//		byCategory.put(DISABLED.category, new TreeSet<LotroDrumInfo>());
+//		byCategory.put(DISABLED.category, new LinkedHashSet<LotroDrumInfo>());
+		
 		byCategory.get(DISABLED.category).add(DISABLED);
 		byId.put(DISABLED.note.id, DISABLED);
 
@@ -66,19 +87,36 @@ public class LotroDrumInfo implements Comparable<LotroDrumInfo>
 		// add(Note.B4, "Conga Mid");
 		// add(Note.C5, "Slap");
 		
-		   add(Note.C2, "Kick");
-		   add(Note.Cs2, "Kick");
-		   add(Note.D2, "Low Tom");
-		   add(Note.Ds2, "High Tom");
-		   add(Note.E2, "Slap");
-		   add(Note.F2, "Snare");
-		   add(Note.Fs2, "Clap");
+		//   add(Note.Cs2, "Kick");
+		
+		
+		   add(Note.C6, "1- Kick");
+		   add(Note.E6, "2- Low Tom");
+		   add(Note.F6, "3- High Tom");
+		   add(Note.G6, "4- Snare");
+		   add(Note.A6, "5- Slap");
+		   add(Note.B6, "6- Clap");
+//add(Note.D6,"testy");
 
-		int noteCount = Note.MAX_PLAYABLE.id - Note.MIN_PLAYABLE.id + 1;
-		if (byId.keySet().size() < noteCount)
+
+		
+		
+//		changing this for shroud specifically to see if i like it more
+//		*this reduces the amount of selectable notes in the pulldown* and seems to fix the selection bug not triggering event
+		   
+//		int noteCount = Note.MAX_PLAYABLE.id - Note.MIN_PLAYABLE.id + 1;
+	    int noteCount = Note.C6.id - Note.B6.id +1;
+
+	    if (byId.keySet().size() < noteCount)
 		{
 			List<Integer> unassigned = new ArrayList<Integer>(noteCount);
-			for (int id = Note.MIN_PLAYABLE.id; id <= Note.MAX_PLAYABLE.id; id++)
+			
+//			changing this for shroud specifically to see if i like it more
+//			*this reduces the amount of selectable notes in the pulldown* and seems to fix the selection bug not triggering event
+			
+//			for (int id = Note.MIN_PLAYABLE.id; id <= Note.MAX_PLAYABLE.id; id++)
+			for (int id = Note.C5.id; id <= Note.B5.id; id++)
+
 			{
 				unassigned.add(id);
 			}
@@ -118,16 +156,28 @@ public class LotroDrumInfo implements Comparable<LotroDrumInfo>
 
 	private static void add(Note note, String category)
 	{
+//		original sorted map/set
 		SortedSet<LotroDrumInfo> categorySet = byCategory.get(category);
+
+//		Set<LotroDrumInfo> categorySet = byCategory.get(category);
+//		LinkedHashSet<LotroDrumInfo> categorySet = byCategory.get(category);
+
 		if (categorySet == null)
 		{
+//			original sorted map/set
 			byCategory.put(category, categorySet = new TreeSet<LotroDrumInfo>());
+
+//			byCategory.put(category, categorySet = new TreeSet<LotroDrumInfo>());
+//			byCategory.put(category, categorySet = new LinkedHashSet<LotroDrumInfo>());
+
 		}
 		else if (categorySet.size() == 1)
 		{
 			// We're about to add a second one to the category...
 			// add the "1" to the name of the existing element
+//			original 
 			Note prevNote = categorySet.first().note;
+//			Note prevNote = categorySet.iterator().note;
 			String prevName = category + " 1 (" + prevNote.abc + ")";
 			LotroDrumInfo prevInfo = new LotroDrumInfo(prevNote, prevName, category);
 			categorySet.clear();
@@ -158,12 +208,18 @@ public class LotroDrumInfo implements Comparable<LotroDrumInfo>
 
 	private static class DrumInfoIterator implements Iterator<LotroDrumInfo>
 	{
+//		original sorted map/set
 		private Iterator<SortedSet<LotroDrumInfo>> outerIter;
+
+//		private Iterator<TreeSet<LotroDrumInfo>> outerIter;
+//		private Iterator<LinkedHashSet<LotroDrumInfo>> outerIter;
+
 		private Iterator<LotroDrumInfo> innerIter;
 
 		public DrumInfoIterator()
 		{
 			outerIter = byCategory.values().iterator();
+	//		outerIter = byId.values().iterator();
 		}
 
 		@Override public boolean hasNext()
@@ -175,7 +231,6 @@ public class LotroDrumInfo implements Comparable<LotroDrumInfo>
 		{
 			while (innerIter == null || !innerIter.hasNext())
 				innerIter = outerIter.next().iterator();
-
 			return innerIter.next();
 		}
 

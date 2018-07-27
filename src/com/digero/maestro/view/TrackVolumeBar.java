@@ -5,7 +5,13 @@ import java.awt.Dimension;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
 import java.awt.RenderingHints;
+import java.awt.Stroke;
+import java.awt.BasicStroke;
+
+import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -13,6 +19,8 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
 import java.awt.geom.RoundRectangle2D;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +33,12 @@ import com.digero.common.util.Util;
 
 public class TrackVolumeBar extends JPanel implements IDiscardable
 {
-	/**
-	 * 
-	 */
+
+	
 	private static final long serialVersionUID = -5087232224317389252L;
 	private static final int PTR_WIDTH = 6;
-	private static final int PTR_HEIGHT = 16;
-	private static final int BAR_HEIGHT = 10;
+	private static final int PTR_HEIGHT = 18;
+	private static final int BAR_HEIGHT = 12;
 	private static final int SIDE_PAD = PTR_WIDTH / 2;
 	private static final int ROUND = 0;
 
@@ -48,10 +55,12 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 	private final int MIN_VALUE;
 	private final int MAX_VALUE;
 	private int value;
+	
 
 	// Visual properties
 	private boolean mouseWithin = false;
 	private boolean mouseDown = false;
+	private boolean mouseWheeled = false;
 
 	public TrackVolumeBar(int trackMinVelocity, int trackMaxVelocity)
 	{
@@ -62,7 +71,8 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		addMouseListener(inputHandler);
 		addMouseMotionListener(inputHandler);
 		addKeyListener(inputHandler);
-
+		addMouseWheelListener(inputHandler);
+		
 		Dimension sz = new Dimension(WIDTH, PTR_HEIGHT);
 		setMinimumSize(sz);
 		setPreferredSize(sz);
@@ -96,6 +106,10 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		return mouseDown;
 	}
 
+	public boolean isWheeled() {
+		return mouseWheeled;
+	}
+	
 	public void addActionListener(ActionListener trackVolumeListener)
 	{
 		if (actionListeners == null)
@@ -123,11 +137,15 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 
 	@Override protected void paintComponent(Graphics g)
 	{
+
 		super.paintComponent(g);
 
 		Graphics2D g2 = (Graphics2D) g;
-		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+//		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
 
+		//Stroke defaultStroke = g2.getStroke();
+		
+		
 		int vMin = MIN_VALUE;
 		int vMax = MAX_VALUE;
 		int vCtr = DEFAULT_VALUE;
@@ -148,6 +166,66 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		Color bkgdA = Color.DARK_GRAY;
 		Color bkgdB = Color.GRAY;
 
+		// mine!
+
+		int volnumber = ((value + Math.abs(MIN_VALUE))*100) / Math.abs(MIN_VALUE - MAX_VALUE);
+		volnumber = Math.round(volnumber / 3) * 3;
+		
+
+		
+//		System.out.println(volnumber);
+//		System.out.println("value"+value);
+
+//		System.out.println(MIN_VALUE+" "+MAX_VALUE+" "+value+" "+volnumber);
+		
+/*		System.out.println(MIN_VALUE+" "+MAX_VALUE+" "+(value+100)/16
+				+" "+
+				((value + Math.abs(MIN_VALUE) + STEP_SIZE) / STEP_SIZE) + "volnumber: "+volnumber
+				
+				); // -84 first then -80 to 112(step 16) then 117
+//		drawVolNum();
+
+				
+
+		
+		
+	/*	
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+		g2.setStroke(new BasicStroke(1));
+
+		g2.setColor(Color.RED);
+		g2.drawLine(4, 0, 4, 2);
+		g2.setColor(Color.RED);
+		g2.drawLine(11, 0, 11, 2);
+		g2.setColor(Color.RED);
+		g2.drawLine(18, 0, 18, 2);
+		g2.setColor(Color.RED);
+		g2.drawLine(Util.clamp(Math.round(4*STEP_SIZE), MIN_VALUE, MAX_VALUE) + 3, 0, Util.clamp(Math.round(4*STEP_SIZE), MIN_VALUE, MAX_VALUE) + PTR_WIDTH / 2, 2);
+
+/*		
+		g2.setColor(Color.GRAY);
+		g2.drawLine(PTR_WIDTH / 2, 0, PTR_WIDTH / 2, 2);
+
+		g2.setColor(Color.GRAY);
+		g2.drawLine(PTR_WIDTH / 2 + STEP_SIZE, 0, PTR_WIDTH / 2 + STEP_SIZE, 2);
+
+		g2.setColor(Color.GRAY);
+		g2.drawLine((PTR_WIDTH / 2) + (STEP_SIZE * 2), 0, (PTR_WIDTH / 2) + (STEP_SIZE * 2), 2);
+		
+		g2.setColor(Color.GRAY);
+		g2.drawLine((PTR_WIDTH / 2) + (STEP_SIZE * 3), 0, (PTR_WIDTH / 2) + (STEP_SIZE * 3), 2);
+		
+		g2.setColor(Color.GRAY);
+		g2.drawLine((PTR_WIDTH / 2) + (STEP_SIZE * 4), 0, (PTR_WIDTH / 2) + (STEP_SIZE * 4), 2);
+
+		
+		g2.setStroke(defaultStroke);
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		//-!
+*/		
+
+		
+		
 		g2.setClip(new RoundRectangle2D.Float(x, y, right - x, BAR_HEIGHT, ROUND, ROUND));
 
 		// Background
@@ -168,6 +246,23 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		g2.setColor(Color.BLACK);
 		g2.drawRoundRect(x, y, right - x - 1, BAR_HEIGHT, ROUND, ROUND);
 
+		// Number
+	    g.setFont(new Font("Monospace", Font.PLAIN, 10));
+	    FontMetrics fm = g.getFontMetrics();
+
+	    //g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+
+	    //TODO: make the volnumber relocator prettier
+	    if (volnumber < 25 && (mouseDown || mouseWithin)) {
+	    	g2.drawString(String.valueOf(volnumber), 16, BAR_HEIGHT + fm.getDescent() - 2);
+	    } 
+	    else 
+	    {    	
+	    	g2.drawString(String.valueOf(volnumber), 3, BAR_HEIGHT + fm.getDescent() - 2);
+	    }
+
+	    //g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		
 		// Pointer
 		if (mouseDown || mouseWithin)
 		{
@@ -181,9 +276,10 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 			g2.setColor(Color.BLACK);
 			g2.drawRoundRect(left, 0, PTR_WIDTH - 1, PTR_HEIGHT - 1, ROUND, ROUND);
 		}
+		
 	}
 
-	private class InputHandler implements MouseListener, MouseMotionListener, KeyListener
+	private class InputHandler implements MouseListener, MouseMotionListener, KeyListener, MouseWheelListener
 	{
 		private int deltaAtDragStart = value;
 
@@ -199,7 +295,7 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 			}
 			else
 			{
-				float xMin = SIDE_PAD;
+				float xMin = SIDE_PAD; 
 				float xMax = getWidth() - 2 * SIDE_PAD;
 
 				float v = (MAX_VALUE - MIN_VALUE) * (x - xMin) / xMax + MIN_VALUE;
@@ -208,8 +304,9 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 
 				if (value != MIN_VALUE && value != MAX_VALUE && Math.abs(value - DEFAULT_VALUE) < VALUE_GUTTER)
 					value = DEFAULT_VALUE;
-			}
 
+			}
+	
 			fireActionEvent();
 			repaint();
 		}
@@ -269,9 +366,11 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 
 		@Override public void mouseExited(MouseEvent e)
 		{
-			if (mouseWithin)
+			if (mouseWithin || mouseWheeled )
 			{
 				mouseWithin = false;
+				mouseWheeled = false;
+				fireActionEvent();
 				repaint();
 			}
 		}
@@ -288,6 +387,32 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 
 		@Override public void keyTyped(KeyEvent e)
 		{
+		}
+
+		@Override public void mouseWheelMoved(MouseWheelEvent e) {
+
+			if (e.getWheelRotation() < 0 ) {
+				if (value != MAX_VALUE) {
+
+					value = value + STEP_SIZE;
+					value = Util.clamp(Math.round(value / STEP_SIZE) * STEP_SIZE, MIN_VALUE, MAX_VALUE);
+					mouseWheeled = true;
+
+					fireActionEvent();			
+					repaint();
+				}
+			}
+			else {
+				if (value != MIN_VALUE) {
+
+					value = value - STEP_SIZE;
+					value = Util.clamp(Math.round(value / STEP_SIZE) * STEP_SIZE, MIN_VALUE, MAX_VALUE);
+					mouseWheeled = true;
+
+					fireActionEvent();			
+					repaint();
+				}
+			}
 		}
 	}
 }

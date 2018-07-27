@@ -1,3 +1,6 @@
+v0.7
+----------
+- Remapped drum samples to match up in-game and use less space in the .abc
 
 v0.6
 ----------
