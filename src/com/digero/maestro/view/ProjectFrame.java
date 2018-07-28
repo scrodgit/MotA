@@ -184,6 +184,7 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 	public ProjectFrame()
 	{
 		super(MaestroMain.APP_NAME);
+		//FIXME: configure to account for hi-dpi.  can check the current font scaling, then multiply.
 		setMinimumSize(new Dimension(512, 384));
 		Util.initWinBounds(this, prefs.node("window"), 800, 600);
 
