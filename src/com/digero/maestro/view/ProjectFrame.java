@@ -3,6 +3,7 @@ package com.digero.maestro.view;
 import info.clearthought.layout.TableLayout;
 import info.clearthought.layout.TableLayoutConstants;
 
+import javafx.stage.Screen;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -20,6 +21,7 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.prefs.Preferences;
@@ -184,7 +186,15 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 	public ProjectFrame()
 	{
 		super(MaestroMain.APP_NAME);
-		//FIXME: configure to account for hi-dpi.  can check the current font scaling, then multiply.
+
+		//FIXME: configure to allow setMinimumSize and initWinBounds to account for hi-dpi with example code below.  
+		/*
+		Screen screen = Screen.getPrimary();
+		double dpi = screen.getDpi();
+		double scaleX = screen.getOutputScaleX();
+		double scaleY = screen.getOutputScaleY();
+		System.out.println("DPI: " + dpi + " - scaleX: " + scaleX + " - scaleY: " + scaleY);
+		 */
 		setMinimumSize(new Dimension(512, 384));
 		Util.initWinBounds(this, prefs.node("window"), 800, 600);
 
@@ -262,6 +272,8 @@ public class ProjectFrame extends JFrame implements TableLayoutConstants, ICompi
 				{
 					setVisible(false);
 					dispose();
+					System.exit(0);
+
 				}
 			}
 		});

@@ -220,8 +220,8 @@ public class TrackPanel extends JPanel implements IDiscardable, TableLayoutConst
 		{
 			@Override public void actionPerformed(ActionEvent e)
 			{
-				// Only update the actual ABC part when the user stops dragging the trackVolumeBar
-				if (!trackVolumeBar.isDragging() && !trackVolumeBar.isWheeled())
+				// Only update the actual ABC part when the user stops dragging the trackVolumeBar or uses the mousewheel
+				if (!trackVolumeBar.isDragging() || trackVolumeBar.isWheeled())
 					abcPart.setTrackVolumeAdjust(trackInfo.getTrackNumber(), trackVolumeBar.getDeltaVolume());
 
 				updateState();
@@ -504,7 +504,7 @@ public class TrackPanel extends JPanel implements IDiscardable, TableLayoutConst
 		}
 
 
-		if (trackVolumeBar.isDragging() || trackVolumeBar.isWheeled())
+		if (trackVolumeBar.isDragging() || trackVolumeBar.isWheeledPersistView())
 		{
 			noteGraph.setDeltaVolume(trackVolumeBar.getDeltaVolume());
 			noteGraph.setShowingNoteVelocity(true);

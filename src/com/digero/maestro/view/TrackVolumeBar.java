@@ -61,6 +61,7 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 	private boolean mouseWithin = false;
 	private boolean mouseDown = false;
 	private boolean mouseWheeled = false;
+	private boolean mouseWheeledPersistView = false;
 
 	public TrackVolumeBar(int trackMinVelocity, int trackMaxVelocity)
 	{
@@ -106,8 +107,14 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		return mouseDown;
 	}
 
-	public boolean isWheeled() {
+	public boolean isWheeled()
+	{
 		return mouseWheeled;
+	}
+	
+	public boolean isWheeledPersistView()
+	{
+		return mouseWheeledPersistView;
 	}
 	
 	public void addActionListener(ActionListener trackVolumeListener)
@@ -315,7 +322,9 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		{
 			if (mouseDown)
 			{
+				if (mouseWheeledPersistView == true) { mouseWheeledPersistView = false; }
 				mouseDown = false;
+
 				if (!success)
 					value = deltaAtDragStart;
 
@@ -366,10 +375,10 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 
 		@Override public void mouseExited(MouseEvent e)
 		{
-			if (mouseWithin || mouseWheeled )
+			if (mouseWithin || mouseWheeledPersistView )
 			{
 				mouseWithin = false;
-				mouseWheeled = false;
+				mouseWheeledPersistView = false;
 				fireActionEvent();
 				repaint();
 			}
@@ -389,28 +398,36 @@ public class TrackVolumeBar extends JPanel implements IDiscardable
 		{
 		}
 
-		@Override public void mouseWheelMoved(MouseWheelEvent e) {
-
-			if (e.getWheelRotation() < 0 ) {
-				if (value != MAX_VALUE) {
-
+		@Override public void mouseWheelMoved(MouseWheelEvent e)
+		{
+			if (e.getWheelRotation() < 0 )
+			{
+				if (value != MAX_VALUE)
+				{
 					value = value + STEP_SIZE;
 					value = Util.clamp(Math.round(value / STEP_SIZE) * STEP_SIZE, MIN_VALUE, MAX_VALUE);
 					mouseWheeled = true;
-
+					mouseWheeledPersistView = true;
+					
 					fireActionEvent();			
 					repaint();
+
+					mouseWheeled = false;
 				}
 			}
-			else {
-				if (value != MIN_VALUE) {
-
+			else
+			{
+				if (value != MIN_VALUE)
+				{
 					value = value - STEP_SIZE;
 					value = Util.clamp(Math.round(value / STEP_SIZE) * STEP_SIZE, MIN_VALUE, MAX_VALUE);
 					mouseWheeled = true;
+					mouseWheeledPersistView = true;
 
 					fireActionEvent();			
 					repaint();
+
+					mouseWheeled = false;
 				}
 			}
 		}
